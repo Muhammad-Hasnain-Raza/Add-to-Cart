@@ -1,0 +1,122 @@
+
+@import url("https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap");
+
+* {
+	padding: 0;
+	margin: 0;
+	box-sizing: border-box;
+	font-family: Verdana, Geneva, Tahoma, sans-serif;
+}
+
+body {
+	background-color: #7196a5;
+}
+
+.categories {
+	display: grid;
+	grid-template-columns: repeat(4);
+	width: 100%;
+	text-align: center;
+	margin-bottom: 30px;
+}
+
+.categories h4 {
+	width: 100%;
+	padding: 20px;
+	font-size: 1.4rem;
+	transition: all 0.1s;
+	border-bottom: 3px solid #000000;
+}
+
+.categories h4:hover {
+	cursor: pointer;
+}
+
+/* Card styling */
+
+.cards-container {
+	display: grid;
+	grid-template-columns: repeat(3,1fr);
+	column-gap: 10px;
+	row-gap: 30px;
+	width: 95%;
+	margin-left: 100px;
+	margin-bottom: 20px;
+}
+
+.card {
+	width: 60%;
+	height: 100%;
+	box-shadow: 2px 4px 4px rgba(0, 0, 0, 0.722);
+	border-radius: 5px;
+	position: relative;
+	background-color: #ffffff;
+}
+
+.card .img {
+	padding: 10px 0;
+}
+
+.card .img img {
+	width: 50%;
+	height: 100px;
+	object-fit: contain;
+}
+
+.card-content {
+	display: flex;
+	padding: 10px 20px;
+	flex-direction: column;
+}
+
+.card-content h5 {
+	font-size: 1rem;
+	text-transform: capitalize;
+	color: #000000e4;
+	font-weight: 600;
+	margin: 10px 0;
+}
+
+.card-content h3 {
+	font-size: 1.5rem;
+	margin: 10px 0 5px 0;
+	font-weight: 500;
+}
+
+.card-content .card-description {
+	font-size: 0.8rem;
+	margin: 8px 0 100px 0;
+	color: #000000e4;
+}
+
+.card-main {
+	display: flex;
+	align-items: center;
+	justify-content: space-between;
+	width: 90%;
+	position: absolute;
+	bottom: 15px;
+}
+
+
+.card-price {
+	color: #000000;
+	font-weight: 900;
+	font-size: 1.2rem;
+	text-align: center;
+	margin-top: 100px;
+}
+
+.cart-btn button {
+	border: none;
+	background: none;
+	font-size: 1.4rem;
+	transition: all 0.4s;
+	margin-top: 30px;
+}
+
+.cart-btn button:hover
+/* .cart-btn button i */ {
+	color: #ffffff;
+	cursor: pointer;
+}
